@@ -237,6 +237,7 @@ margin-right: 30px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--dark-text-color);
+  margin-bottom: 50px;
 }
 
 .direction-activity-list {
@@ -278,6 +279,7 @@ margin-right: 30px;
   letter-spacing: 0.03em;
   text-align: center;
   padding-top: 94px;
+  margin-bottom: 50px;
   color: var(--dark-text-color);
 }
 
@@ -370,6 +372,16 @@ margin-right: 30px;
 
 /* -----------------PARTFOLIO-HERO----------------- */
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 
 .portfolio-btn-list {
   display: flex;
@@ -377,7 +389,7 @@ margin-right: 30px;
   margin-bottom: 50px;
 }
 
-.portfolio-btn-item:not(:last-child) {
+.portfolio-btn-item {
   margin-right: 8px;
 }
 
