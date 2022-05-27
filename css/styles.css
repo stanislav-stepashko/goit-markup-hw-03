@@ -46,7 +46,7 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
-  color: #212121;
+  color: var(--dark-text-color);
 }
 
 /* -----------------HEADER----------------- */
@@ -60,10 +60,13 @@ body {
   /* outline: 1px solid crimson; */
 }
 
+header {
+  border-bottom: 1px solid var(--heder-border);
+}
+
 .header {
   display: flex;
   align-items: center;
-  /* border-bottom: 1px solid var(--heder-border); */
   /* outline: 1px solid crimson; */
 }
 
@@ -459,7 +462,7 @@ margin-right: 30px;
   line-height: 2;
   letter-spacing: 0.06em;
   padding-top: 20px;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   padding-left: 24px;
   color: var(--dark-text-color);
 }
