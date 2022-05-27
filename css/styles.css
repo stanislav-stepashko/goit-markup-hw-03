@@ -39,45 +39,51 @@ address {
   --dark-background-color: #2f303a;
   --light-background-color: #F5F4FA;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --heder-border: #ECECEC;
 }
 
-.body {
-  font-family: Roboto;
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  color: #212121;
 }
 
 /* -----------------HEADER----------------- */
 
 .container {
-  width: 1170px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   /* outline: 1px solid crimson; */
-}
-
-.section {
-  margin-top: 94px;
-  margin-bottom: 94px;
 }
 
 .header {
   display: flex;
   align-items: center;
+  /* border-bottom: 1px solid var(--heder-border); */
+  /* outline: 1px solid crimson; */
 }
 
 .navigation {
   display: flex;
   align-items: center;
+  /* outline: 1px solid crimson; */
 }
 
 .nav-list {
   display: flex;
   align-items: center;
+  /* outline: 1px solid crimson; */
 }
 
 .contact-information {
   display: flex;
   align-items: center;
   margin-left: auto;
+  /* outline: 1px solid crimson; */
 }
 
 .logo-link-header {
@@ -91,6 +97,7 @@ address {
   padding-top: 24px;
   padding-bottom: 24px;
   color: var(--dark-text-color);
+  /* outline: 1px solid crimson; */
 }
 
 .web {
@@ -102,7 +109,10 @@ address {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--dark-text-color);
+  /* outline: 1px solid crimson; */
 }
 
 .nav-list-link:hover,
@@ -195,18 +205,19 @@ address {
 
 /* -----------------HERO-BENEFITS----------------- */
 
+.hero-benefits .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  /* background-color: teal; */
+}
+
 .benefits-list {
   display: flex;
-  /* align-items: center; */
 }
 
 .benefits-item:not(:last-child) {
 margin-right: 30px;
 }
-
-/* .benefits-item {
-  outline: 1px solid tomato;
-} */
 
 .benefits {
   font-weight: 700;
@@ -230,6 +241,10 @@ margin-right: 30px;
 
 /* -----------------DIRECTION-ACTIVITY----------------- */
 
+.direction-activity .container {
+  padding-bottom: 94px;
+}
+
 .direction-activity-header {
   font-weight: 700;
   font-size: 36px;
@@ -238,6 +253,7 @@ margin-right: 30px;
   text-align: center;
   color: var(--dark-text-color);
   margin-bottom: 50px;
+  /* outline: 2px solid teal; */
 }
 
 .direction-activity-list {
@@ -250,6 +266,11 @@ margin-right: 30px;
 
 /* -----------------TEAM----------------- */
 
+.team .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .team {
   background-color: var(--light-background-color);
 }
@@ -259,12 +280,13 @@ margin-right: 30px;
 }
 
 .team-list-item {
-  background-color: #fff;
+  background-color: var(--wight-text-color);
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
   /* outline: 2px solid teal; */
 }
 
@@ -273,12 +295,10 @@ margin-right: 30px;
 }
 
 .team-header {
-  font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-top: 94px;
   margin-bottom: 50px;
   color: var(--dark-text-color);
 }
@@ -288,7 +308,7 @@ margin-right: 30px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  padding-top: 30px;
+  margin-top: 30px;
   color: var(--dark-text-color);
 }
 
@@ -297,8 +317,7 @@ margin-right: 30px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  padding-top: 10px;
-  padding-bottom: 30px;
+  margin-top: 10px;
   color: var(--light-text-color);
 }
 
@@ -372,6 +391,11 @@ margin-right: 30px;
 
 /* -----------------PARTFOLIO-HERO----------------- */
 
+.portfolio-hero .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -389,11 +413,11 @@ margin-right: 30px;
   margin-bottom: 50px;
 }
 
-.portfolio-btn-item {
+.portfolio-btn-item:not(:last-child) {
   margin-right: 8px;
 }
 
-.portfolio-btn-item {
+.portfolio-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -404,10 +428,11 @@ margin-right: 30px;
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
+  cursor: pointer;
 }
 
-.portfolio-btn-item:hover,
-.portfolio-btn-item:focus {
+.portfolio-btn:hover,
+.portfolio-btn:focus {
   background-color: var(--focus-color);
   color: var(--wight-text-color);
 }
