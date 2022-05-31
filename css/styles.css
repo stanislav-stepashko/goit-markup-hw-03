@@ -275,11 +275,6 @@ margin-right: 30px;
 
 /* -----------------TEAM----------------- */
 
-.team .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .team {
   background-color: var(--light-background-color);
 }
